@@ -29,15 +29,15 @@
     <ul class="header_nav-list">
       
       <li class="header_nav-item">
-        <a href="#about_the_shelter" class="header_nav-link"> About the shelter </a>
+        <a href="#about" class="header_nav-link"> About the shelter </a>
       </li>
 
       <li class="header_nav-item">
-        <a href="#our_pets" class="header_nav-link"> Our pets </a>
+        <a href="#pets" class="header_nav-link"> Our pets </a>
       </li>
 
       <li class="header_nav-item">
-        <a href="#help_the_shelter" class="header_nav-link"> Help the shelter </a>
+        <a href="#help" class="header_nav-link"> Help the shelter </a>
       </li>
      
       <li class="header_nav-item">
@@ -59,22 +59,114 @@
 
 <div class="container">
 
-  <div class="start_screen-content"> 
+  <!--Start_screen-content-->
+
+  <section class="start_screen-content"> 
 
 <div class="content"> 
-  <h2> Not only people need a house </h2>
-  <p> We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see! </p>
+  <h2 class="heading"> Not only people need a house </h2>
+  <p class="subheading"> We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see! </p>
   <button type="button" class="make_a_friend"> Make a friend </button>
 </div>
 
 <div class="start_screen-puppy"> 
 </div>
 
+  </section>
+
+  <!--About-->
+
+  <section class="section" id="about"> 
+    <div class="about-content">
+
+    <div class="about-pets">
+    </div>
+
+    <div class="content">
+    <h2 class="heading"> About the shelter “Cozy House” </h2>
+    <p class="subheading"> Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved. </p>
+    <p class="subheading"> We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone. </p>
+  </div>
+
 </div>
+  </section>
+
+  <!--Pets-->
+
+  <section class="section" id="pets"> 
+  <div class="pets-content">
+
+  <h2 class="heading">  Our friends who are looking for a house </h2>
+  
+  <div class="slider">
+</div>
+
+<button type="button"> Get to know the rest </button>
+
+</div>
+</section>
+
+<!--Help-->
+
+<section class="section" id="help"> 
+<div class="help-content">
+
+<h2 class="heading">  How you can help our shelter </h2>
+
+<div class="list">
+</div>
+
+</div>
+</section>
+
+ <!--Donation-->
+
+<section class="section" id="donation"> 
+<div class="donation-content">
+
+<div class="donation-dog">
+</div>
+
+<div class="content">
+<h2 class="heading">  You can also make a donation </h2>
+<p class="subheading"> Name of the bank / Type of bank account </p>
+<div class="credit_card">
+<div class="credit_card_content"> 
+<p> 8380 2880 8028 8791 7435 </p>
+</div>
+</div>
+<p> Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+</div>
+
+</div>
+</section>
+
 
 </div>
 
 </main>
 
 </body>
+
+<script>
+function injectCss(file = 'style.css') {
+  fetch(file)
+    .then((response) => response.text())
+    .then((data) => {
+      let stl = document.createElement('style');
+      stl.innerHTML = data;
+      document.head.appendChild(stl);
+    });
+}
+
+function injectAll() {
+  let links = document.getElementsByTagName('link');
+  for (stl of links) {
+    injectCss(stl.href);
+  }
+}
+
+window.onload = injectAll;
+</script>
+
 </html>
