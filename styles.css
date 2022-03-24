@@ -120,8 +120,131 @@ text-decoration: none;
   border-bottom: 3px solid #F1CDB3;;
 }
 
+
+
 /* Start_screen-content */
+
+
 .start_screen-content {
   display: flex;
   justify-content: space-between;
+}
+
+.content {
+  margin-right: 42px;
+}
+
+h2.heading {
+  margin: 0 0 42px;
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 130%;
+/* or 57px */
+
+display: flex;
+align-items: center;
+
+/* color-light-xl */
+
+color: #FFFFFF;
+
+}
+
+.start_screen-content.subheading {
+  margin-bottom: 42px;
+
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* or 24px */
+
+display: flex;
+align-items: center;
+
+/* color-dark-s */
+
+color: #CDCDCD;
+
+}
+
+.button-make_a_friend {
+  background: #F1CDB3;
+border-radius: 100px;
+}
+
+.button_nav-link {
+padding: 15px 45px;
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+
+color: #292929;
+
+text-decoration: none;
+
+}
+
+.start_screen-puppy  {
+  margin-right: 40px;
+}
+
+
+
+/* About */
+
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3.heading {
+  margin: 0 0 25px;
+
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+
+color: #545454;
+
+}
+
+.subheading {
+  margin-bottom: 25px;
+
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* or 24px */
+
+display: flex;
+align-items: center;
+
+/* color-dark-xl */
+
+color: #4C4C4C;
+
 }
