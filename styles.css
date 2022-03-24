@@ -97,6 +97,10 @@ color: #FFFFFF;
   justify-content: space-between;
 }
 
+.header_nav-item {
+  margin-right: 35px;
+}
+
 .header_nav-link {
   font-family: 'Arial';
 font-style: normal;
