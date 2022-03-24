@@ -119,3 +119,9 @@ text-decoration: none;
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;;
 }
+
+/* Start_screen-content */
+.start_screen-content {
+  display: flex;
+  justify-content: space-between;
+}
