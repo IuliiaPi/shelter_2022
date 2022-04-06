@@ -294,14 +294,49 @@ color: #4C4C4C;
   background: #F6F6F6;
 }
 
-#pets h3.heading {
-  margin-bottom: 60px;
+#pets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#pets h3.heading {
+  /* margin-bottom: 60px; */
+
+/* text-align: center; */
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+display: flex;
+align-items: center;
 text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
 }
 
 .slider {
-  margin-bottom: 60px;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+  /* margin-bottom: 60px; */
+}
+
+.button_arrow {
+  border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pets-katrine {
@@ -390,7 +425,8 @@ text-decoration: none;
 
 .help-content {
   display: flex;
-  
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   /* margin: 80px 182px 100px 183px; */
@@ -418,6 +454,10 @@ color: #545454;
 
   /* margin: 80px 182px 100px 183px; */
 }
+
+/* .list_item {
+
+} */
 
 h4 {
   font-family: 'Georgia';
