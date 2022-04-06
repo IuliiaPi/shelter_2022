@@ -383,10 +383,10 @@ text-decoration: none;
 
 
 
-/* ----------------------  Footer styles end -------------------------- */
+/* ----------------------  Footer styles start -------------------------- */
 
 
-.footer {
+#footer-content {
   display: flex;
   justify-content: space-between;
 
