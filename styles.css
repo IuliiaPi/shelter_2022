@@ -385,10 +385,57 @@ text-decoration: none;
 
 /* ----------------------  Footer styles start -------------------------- */
 
+.footer {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+}
 
 #footer-content {
   display: flex;
   justify-content: space-between;
 
-  margin: 48px 40px 72px40px;
+  /* margin: 40px 40px 40px 40px; */
+}
+
+/* .contacts {
+  margin: 16px 160px 60px 0;
+} */
+
+.mail,
+.phone,
+.Boston,
+.London {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+letter-spacing: 0.06em;
+
+/* color-light-xl */
+color: #FFFFFF;
+}
+
+h4 a {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+letter-spacing: 0.06em;
+
+/* color-primary */
+color: #F1CDB3;
+
+text-decoration: none;
+}
+
+.icon {
+  background: #F1CDB3;
 }
