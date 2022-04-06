@@ -411,6 +411,22 @@ letter-spacing: 0.06em;
 color: #545454;
 }
 
+h4 {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+}
+
 /* ----------------------  Help styles end -------------------------- */
 
 
