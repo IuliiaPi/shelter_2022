@@ -379,3 +379,16 @@ text-decoration: none;
 
 
 /* ----------------------  Pets styles end -------------------------- */
+
+
+
+
+/* ----------------------  Footer styles end -------------------------- */
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 48px 40px 72px40px;
+}
