@@ -382,6 +382,40 @@ text-decoration: none;
 
 
 
+/* ----------------------  Help styles start -------------------------- */
+
+#help {
+  background: #FFFFFF;
+}
+
+.help-content {
+  display: flex;
+  justify-content: space-between;
+
+  /* margin: 80px 182px 100px 183px; */
+}
+
+h3 .heading {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+}
+
+/* ----------------------  Help styles end -------------------------- */
+
+
+
+
 /* ----------------------  Donation styles start -------------------------- */
 
 #donation {
