@@ -390,6 +390,7 @@ text-decoration: none;
 
 .help-content {
   display: flex;
+  
   justify-content: space-between;
 
   /* margin: 80px 182px 100px 183px; */
@@ -409,6 +410,13 @@ letter-spacing: 0.06em;
 
 /* color-dark-l */
 color: #545454;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+
+  /* margin: 80px 182px 100px 183px; */
 }
 
 h4 {
