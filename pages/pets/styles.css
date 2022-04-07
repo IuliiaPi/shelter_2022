@@ -187,6 +187,27 @@ color: #292929;
 
 } */
 
+.button_paginator_inactive {
+  border: 2px solid #CDCDCD;
+box-sizing: border-box;
+border-radius: 100px;
+}
+
+.t{
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-s */
+color: #CDCDCD;
+}
 
 /* Footer */
 
