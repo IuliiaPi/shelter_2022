@@ -137,6 +137,50 @@ color: #545454;
 
 } */
 
+.card {
+  background: #FAFAFA;
+border-radius: 9px;
+}
+
+.pets-katrine {
+  background: url(image.png);
+border-radius: 9px 9px 0px 0px;
+}
+
+.pets-card-title {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+}
+
+.learn_more{
+  border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+letter-spacing: 0.06em;
+
+/* color-dark-3xl */
+color: #292929;
+}
+
+
 /* navigation */
 
 /* .navigation {
