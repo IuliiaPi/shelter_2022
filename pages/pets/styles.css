@@ -30,7 +30,118 @@ font-size: 15px;
 line-height: 160%;
 }
 
-.container {
+/* .container {
   max-width: 1280px;
    margin: 0 auto;  /* vuravnivanie po centry contenta*/
+/* } */ 
+
+
+
+/* -------------------  Header-container  ----------------------- */
+
+
+.header-container {
+  background: #FFFFFF;
 }
+
+.logo_title {
+  /* logo_title */
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+/* or 35px */
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+}
+
+.logo_subtitle {
+  /* logo_subtitle */
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+
+/* color-dark-3xl */
+color: #292929;
+
+}
+
+.nav_link {
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+/* color-dark-l */
+color: #545454;
+
+}
+
+#link_active {
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+/* color-dark-l */
+color: #545454;
+
+  background: #F1CDB3;
+
+}
+
+
+/* -------------------  Pets  ----------------------- */
+
+
+.pets {
+  background: #F6F6F6;
+}
+
+/* Heading */
+
+.heading {
+  font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+/* color-dark-l */
+color: #545454;
+}
+
+/* cards_container */
+
+/* .cards_container {
+
+} */
+
+/* navigation */
+
+/* .navigation {
+
+} */
+
+
+/* Footer */
