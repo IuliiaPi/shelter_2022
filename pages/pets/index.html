@@ -14,49 +14,111 @@
 </head>
 <body>
 
-  <!--Header-->
+  <!--Header--->
 
 
-<header id="header" class="header">
-  <div class="container">
+<header class="header-container">
   
-  <div class="header_wrapper">
+  <div class="header">
   
-  <div class="header_logo">
-  <h1 class="header_logo-title"> Cozy House </h1>
-  <p class="header_logo-subtitle"> Shelter for pets in Boston </p>
+  <div class="logo">
+  <h1 class="logo_title"> Cozy House </h1>
+  <p class="logo_subtitle"> Shelter for pets in Boston </p>
   </div>
   
-    <nav class="header_nav-menu">
+    <nav class="header_nav_menu">
       <ul class="header_nav-list">
         
         <li class="header_nav-item">
-          <a href="#about" class="header_nav-link" id="link_active"> About the shelter </a>
+          <a href="#about" class="nav_link" > About the shelter </a>
         </li>
   
         <li class="header_nav-item">
-          <a href="#pets" class="header_nav-link"> Our pets </a>
+          <a href="#pets" class="nav_link" id="link_active"> Our pets </a>
         </li>
   
         <li class="header_nav-item">
-          <a href="#help" class="header_nav-link"> Help the shelter </a>
+          <a href="#help" class="nav_link"> Help the shelter </a>
         </li>
        
         <li class="header_nav-item">
-        <a href="#footer" class="header_nav-link"> Contacts </a>
+        <a href="#footer" class="nav_link"> Contacts </a>
       </li>
   
       </ul>
     </nav>
   
   </div>
-  </div>
   </header>
   
   
   <!--Main Area-->
 
-  
+  <main class="pets"> 
+
+    <div class="pets-content">
+
+       <!-- Heading  -->
+
+      <h3 class="heading"> Our friends who are looking for a house </h3>
+
+
+      <!-- cards_container -->
+
+
+      <div class="cards_container">
+    
+    
+      <section class="start_screen-content"> 
+    <div class="content"> 
+      <h2 class="heading"> Not only people need a house </h2>
+      <p class="subheading"> We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see! </p>
+      <button type="button" class="button-make_a_friend">
+      <a href="#pets" class="button_nav-link"> Make a friend </a> </button>
+    </div>
+    
+    <div class="start_screen-puppy"> 
+    <img class="start_screen-puppy"
+       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/start-screen-puppy.jpg?raw=true"
+        alt="start_screen-puppy"
+        width="698"
+        height="728"
+        />
+    </div>
+      </section>
+    
+      </div>
+    
+      <!-- navigation -->
+
+      <nav class="navigation"> </nav>
+
+
+
+      <!-- Footer  -->
   
 </body>
+
+<script>
+  function injectCss(file = 'style.css') {
+    fetch(file)
+      .then((response) => response.text())
+      .then((data) => {
+        let stl = document.createElement('style');
+        stl.innerHTML = data;
+        document.head.appendChild(stl);
+      });
+  }
+  
+  function injectAll() {
+    let links = document.getElementsByTagName('link');
+    for (stl of links) {
+      injectCss(stl.href);
+    }
+  }
+  
+  window.onload = injectAll;
+  </script>
+
+
 </html>
