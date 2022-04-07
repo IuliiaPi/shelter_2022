@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;   /* borders and vnytr otstyp bydyt ychituvatsia in width and height elements */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* html {
+  box-sizing: border-box;
+} */
+
+*, *::before, *::after {
+box-sizing: inherit;   /* nasledovanie from parents */
+}
+
+body {
+  /* min-height: 100vh;
+  margin: 0;
+  padding: 0; */
+  
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+  font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+}
+
+.container {
+  max-width: 1280px;
+   margin: 0 auto;  /* vuravnivanie po centry contenta*/
+}
