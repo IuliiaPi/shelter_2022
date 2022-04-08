@@ -113,6 +113,14 @@ color: #545454;
   background: #F6F6F6;
 }
 
+.pets-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+  align-items: center;
+}
+
 /* Heading */
 
 .heading {
@@ -133,11 +141,19 @@ color: #545454;
 
 /* cards_container */
 
-/* .cards_container {
-
-} */
+.cards_container {
+display: flex;
+flex-wrap: wrap;
+}
 
 .card {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+  align-items: center;
+
+
   background: #FAFAFA;
 border-radius: 9px;
 }
@@ -183,9 +199,10 @@ color: #292929;
 
 /* navigation */
 
-/* .navigation {
-
-} */
+.navigation {
+display: flex;
+justify-content: center;
+}
 
 .button_paginator_inactive {
   border: 2px solid #CDCDCD;
@@ -193,7 +210,7 @@ box-sizing: border-box;
 border-radius: 100px;
 }
 
-.t{
+.text{
   font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
@@ -208,6 +225,23 @@ letter-spacing: 0.06em;
 /* color-dark-s */
 color: #CDCDCD;
 }
+
+.button_paginator_active_1 {
+  background: #F1CDB3;
+border-radius: 100px;
+}
+
+#text_active {
+  color: #292929;
+}
+
+.button_paginator_active {
+  border: 2px solid #F1CDB3;
+box-sizing: border-box;
+border-radius: 100px;
+}
+
+
 
 /* Footer */
 
