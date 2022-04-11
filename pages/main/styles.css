@@ -349,12 +349,13 @@ align-items: center;
   border: 2px solid #F1CDB3;
 box-sizing: border-box;
 border-radius: 100px;
+background-color: var(--card-background-color);
 }
 
 .arrow {
   padding: 23px 19px;
-
-  background: #292929;
+  
+  /* background: #292929; */
 }
 
 /* ----------------------------   card  --------------------------------- */
@@ -397,12 +398,13 @@ letter-spacing: 0.06em;
 color: #545454;
 }
 
-.card .btn {
+.card .btn-learn_more {
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
 
   padding: 15px 45px;
+  background-color: var(--card-background-color);
 
   /* width: 187px;
   height: 52px; */
@@ -412,7 +414,7 @@ box-sizing: border-box;
 border-radius: 100px;
 }
 
-.btn .learn_more {
+.btn-learn_more .text {
 /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
@@ -420,6 +422,8 @@ font-size: 17px;
 line-height: 130%;
 /* identical to box height, or 22px */
 letter-spacing: 0.06em;
+
+text-decoration: none;
 color: #292929;
 }
 
@@ -428,7 +432,7 @@ color: #292929;
   /* background-color: darken(var(--card-background-color), 15%); */
 }
 
-.card:hover .btn {
+.btn-learn_more:hover {
   background-color: #F1CDB3;
   border: 2px solid transparent;
   cursor: pointer;
