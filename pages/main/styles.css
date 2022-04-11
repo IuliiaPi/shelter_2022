@@ -345,11 +345,17 @@ align-items: center;
   margin-bottom: 60px;
 }
 
-/* .button_arrow {
+.button_arrow {
   border: 2px solid #F1CDB3;
 box-sizing: border-box;
 border-radius: 100px;
-} */
+}
+
+.arrow {
+  padding: 23px 19px;
+
+  background: #292929;
+}
 
 /* ----------------------------   card  --------------------------------- */
 
