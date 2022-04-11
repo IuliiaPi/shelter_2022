@@ -23,95 +23,112 @@ body {
     flex-direction: column;
     justify-content: space-between; */
 
-  font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
+    font-family: 'Cormorant Infant', serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
-/* .container {
+.container {
   max-width: 1280px;
    margin: 0 auto;  /* vuravnivanie po centry contenta*/
-/* } */ 
+
+   /* background-size: 100%; */
+}
 
 
 
-/* -------------------  Header-container  ----------------------- */
+/*  -------------------------  Header  -------------------------------  */
 
+.header {
+position: sticky;
+}
 
-.header-container {
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 40px;
+
   background: #FFFFFF;
 }
 
-.logo_title {
-  /* logo_title */
-font-family: 'Georgia';
+.header_logo-title,
+.header_logo-link {
+  margin-bottom: 10px;
+  /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
 line-height: 110%;
 /* or 35px */
-display: flex;
-align-items: center;
+/* display: flex;
+align-items: center; */
 letter-spacing: 0.06em;
-
 /* color-dark-l */
 color: #545454;
+text-decoration: none;
 }
 
-.logo_subtitle {
-  /* logo_subtitle */
-font-family: 'Arial';
+.header_logo-subtitle {
+  /* font-family: 'Arial'; */
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 15px;
 /* identical to box height */
-display: flex;
-align-items: center;
+/* display: flex;
+align-items: center; */
 letter-spacing: 0.1em;
-
 /* color-dark-3xl */
 color: #292929;
-
 }
 
-.nav_link {
-  font-family: 'Arial';
+.header_nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_nav-item {
+  margin-right: 35px;
+}
+
+.header_nav-item:last-child {
+  margin-right: 0px;
+}
+
+.header_nav-link {
+  /* font-family: 'Arial'; */
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* identical to box height, or 24px */
-
-/* color-dark-l */
+text-decoration: none;
+  /* transition: color 0.5s; */
+  /* color-dark-l */
 color: #545454;
-
 }
 
 #link_active {
-  font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-/* identical to box height, or 24px */
-
-/* color-dark-l */
-color: #545454;
-
-  background: #F1CDB3;
-
+  /* color-dark-3xl */
+color: #292929;
+  border-bottom: 3px solid #F1CDB3;;
 }
 
+.header_nav-link:hover,
+.header_nav-link:focus,
+.header_nav-link:active {
+  opacity: .75;
+  /*color: #5d7260;      /* pri navedenii */
+}
 
 /* -------------------  Pets  ----------------------- */
 
 
-.pets {
+/* .pets {
   background: #F6F6F6;
-}
+} */
 
 .pets-content {
   display: flex;
@@ -119,12 +136,18 @@ color: #545454;
   /* justify-content: center; */
   /* align-content: center; */
   align-items: center;
+
+  padding: 80px 40px 100px;
+
+  background: #F6F6F6;
 }
 
 /* Heading */
 
-.heading {
-  font-family: 'Georgia';
+.pets-content .heading {
+  margin-bottom: 45px;
+
+  /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -134,37 +157,55 @@ display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-
 /* color-dark-l */
 color: #545454;
 }
 
-/* cards_container */
+/* --------------------  cards_container  ---------------------- */
 
-.cards_container {
+.pets-content .cards_container {
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+
+margin-bottom: 45px;
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  /* justify-content: center; */
+  /* justify-content: space-between; */
   /* align-content: center; */
   align-items: center;
 
+  margin-right: 40px;
+  margin-bottom: 30px;
 
   background: #FAFAFA;
 border-radius: 9px;
 }
 
-.pets-katrine {
-  background: url(image.png);
-border-radius: 9px 9px 0px 0px;
+.card:hover {
+  cursor: pointer;
+  background: #c5c3c3;
+  /* background-color: darken(var(--card-background-color), 15%); */
 }
 
+.card_img {
+  margin-bottom: 30px;
+}
+
+/* .pets-katrine {
+  background: url(image.png);
+border-radius: 9px 9px 0px 0px;
+} */
+
 .pets-card-title {
-  font-family: 'Georgia';
+  margin-bottom: 30px;
+
+  /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -180,11 +221,13 @@ color: #545454;
 }
 
 .learn_more{
+  margin-bottom: 30px;
+
   border: 2px solid #F1CDB3;
 box-sizing: border-box;
 border-radius: 100px;
 
-  font-family: 'Georgia';
+  /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 17px;
@@ -194,41 +237,55 @@ letter-spacing: 0.06em;
 
 /* color-dark-3xl */
 color: #292929;
+padding: 15px 45px;
+background-color: #FAFAFA;
 }
 
-
+.card:hover .learn_more {
+  background-color: #F1CDB3;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
 /* navigation */
 
 .navigation {
 display: flex;
-justify-content: center;
+justify-content: space-between;
+
+width: 340px;
+height: 52px;
+}
+
+.navigation button {
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  background-color: #F6F6F6;
+  text-align: center;
 }
 
 .button_paginator_inactive {
   border: 2px solid #CDCDCD;
-box-sizing: border-box;
-border-radius: 100px;
 }
 
 .text{
-  font-family: 'Georgia';
+  /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 115%;
 /* identical to box height, or 23px */
-display: flex;
+/* display: flex;
 align-items: center;
-text-align: center;
+text-align: center; */
 letter-spacing: 0.06em;
-
 /* color-dark-s */
 color: #CDCDCD;
 }
 
-.button_paginator_active_1 {
+#button_paginator_active_1 {
   background: #F1CDB3;
-border-radius: 100px;
 }
 
 #text_active {
@@ -237,16 +294,88 @@ border-radius: 100px;
 
 .button_paginator_active {
   border: 2px solid #F1CDB3;
-box-sizing: border-box;
-border-radius: 100px;
 }
 
 
 
-/* Footer */
+/* ----------------------  Footer styles start -------------------------- */
 
-.footer {
-  background: url(noise_lines_transparent@2X.png), 
-  radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) 
-  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* width: 1200px;
+height: 310px; */
+
+  /* margin-right: 160px; */
+
+  padding: 40px 40px 0;
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 }
+
+/* #footer-content:last-child {
+margin-right: 0;
+} */
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+width: 278px;
+height: 234px;
+
+  /* margin: 16px 160px 60px 0; */
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+height: 234px;
+}
+
+.mail,
+.phone,
+.Boston,
+.London {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mail,
+.Boston {
+  margin-bottom: 40px;
+}
+
+.contacts .title,
+.locations .title {
+  margin-bottom: 40px;
+  /* font-family: 'Georgia'; */
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+letter-spacing: 0.06em;
+
+/* color-light-xl */
+color: #FFFFFF;
+}
+
+.contacts h4 a,
+.locations h4 a {
+  /* font-family: 'Georgia'; */
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+letter-spacing: 0.06em;
+/* color-primary */
+color: #F1CDB3;
+text-decoration: none;
+}
+
+/* ----------------------  Footer styles end -------------------------- */

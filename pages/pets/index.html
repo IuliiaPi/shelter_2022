@@ -8,53 +8,63 @@
   <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!-- font-family: 'Cormorant Infant', serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@0;1&display=swap" rel="stylesheet">
+
     <!-- <script src="script.js"></script> -->
 
   <title> Our pets </title>
 </head>
 <body>
 
+
+
   <!--Header--->
 
 
-<header class="header-container">
-  
-  <div class="header">
-  
-  <div class="logo">
-  <h1 class="logo_title"> Cozy House </h1>
-  <p class="logo_subtitle"> Shelter for pets in Boston </p>
-  </div>
-  
-    <nav class="header_nav_menu">
-      <ul class="header_nav-list">
-        
-        <li class="header_nav-item">
-          <a href="#about" class="nav_link" > About the shelter </a>
+  <header id="header" class="header">
+    <div class="container">
+    
+    <div class="header_wrapper">
+    
+    <div class="header_logo">
+    <h1 class="header_logo-title"> <a href="../main/index.html" class="header_logo-link"> Cozy House </a> </h1>
+    <p class="header_logo-subtitle"> Shelter for pets in Boston </p>
+    </div>
+    
+      <nav class="header_nav-menu">
+        <ul class="header_nav-list">
+          
+          <li class="header_nav-item">
+            <a href="../main/index.html" class="header_nav-link" > About the shelter </a>
+          </li>
+    
+          <li class="header_nav-item">
+            <a href="#our_pets" class="header_nav-link" id="link_active"> Our pets </a>
+          </li>
+    
+          <li class="header_nav-item">
+            <a href="../main/index.html#help" class="header_nav-link"> Help the shelter </a>
+          </li>
+         
+          <li class="header_nav-item">
+          <a href="#footer" class="header_nav-link"> Contacts </a>
         </li>
-  
-        <li class="header_nav-item">
-          <a href="#pets" class="nav_link" id="link_active"> Our pets </a>
-        </li>
-  
-        <li class="header_nav-item">
-          <a href="#help" class="nav_link"> Help the shelter </a>
-        </li>
-       
-        <li class="header_nav-item">
-        <a href="#footer" class="nav_link"> Contacts </a>
-      </li>
-  
-      </ul>
-    </nav>
-  
-  </div>
-  </header>
+    
+        </ul>
+      </nav>
+    
+    </div>
+    </div>
+    </header>
   
   
   <!--Main Area-->
 
-  <main class="pets"> 
+  <main class="pets" id="our_pets"> 
+    <div class="container">
 
     <div class="pets-content">
 
@@ -69,7 +79,7 @@
       <div class="cards_container">
     
         <div class="card">
-          <img class="pets-katrine"
+          <img class="card_img" id="pets-katrine"
           src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
           alt="pets-katrine"
           width="270"
@@ -81,7 +91,7 @@
       </div>
 
       <div class="card">
-        <img class="pets-Jennifer"
+        <img class="card_img" id="pets-Jennifer"
         src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-jennifer.jpg?raw=true"
         alt="pets-Jennifer"
         width="270"
@@ -93,7 +103,7 @@
     </div>
     
     <div class="card">
-      <img class="pets-Woody"
+      <img class="card_img" id="pets-Woody"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-woody.jpg?raw=true"
       alt="pets-Woody"
       width="270"
@@ -105,7 +115,7 @@
     </div>
 
     <div class="card">
-      <img class="pets-Sophia"
+      <img class="card_img" id="pets-Sophia"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-sophia.jpg?raw=true"
       alt="pets-Sophia"
       width="270"
@@ -117,7 +127,7 @@
     </div>
 
     <div class="card">
-      <img class="pets-Timmy"
+      <img class="card_img" id="pets-Timmy"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-timmy.jpg?raw=true"
       alt="pets-Timmy"
       width="270"
@@ -129,7 +139,7 @@
     </div>
 
     <div class="card">
-      <img class="pets-Charly"
+      <img class="card_img" id="pets-Charly"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-charly.jpg?raw=true"
       alt="pets-Charly"
       width="270"
@@ -141,7 +151,7 @@
     </div>
 
     <div class="card">
-      <img class="pets-Freddie"
+      <img class="card_img" id="pets-Freddie"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-freddie.jpg?raw=true"
       alt="pets-Freddie"
       width="270"
@@ -153,7 +163,7 @@
     </div>
 
     <div class="card">
-      <img class="pets-Scarlett"
+      <img class="card_img" id="pets-Scarlett"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-scarlett.jpg?raw=true"
       alt="pets-Scarlett"
       width="270"
@@ -172,115 +182,97 @@
 
       <nav class="navigation"> 
 
-        <button class="button_paginator_inactive"> 
+        <button disabled type="button" class="button_paginator_inactive"> 
           <h4 class="text"> &lt;&lt; </h4>
         </button>
 
-        <button class="button_paginator_inactive"> 
+        <button disabled type="button" class="button_paginator_inactive"> 
           <h4 class="text"> &lt; </h4>
         </button>
 
-        <button class="button_paginator_active" id="button_paginator_active_1"> 
+        <button type="button" class="button_paginator_active" id="button_paginator_active_1"> 
           <h4 class="text" id="text_active"> 1 </h4>
         </button>
 
-        <button class="button_paginator_active"> 
+        <button type="button" class="button_paginator_active"> 
           <h4 class="text" id="text_active"> &gt; </h4>
         </button>
 
-        <button class="button_paginator_active"> 
+        <button type="button" class="button_paginator_active"> 
           <h4 class="text" id="text_active"> &gt;&gt; </h4>
         </button>
 
       </nav>
+    </div>
 
 </div>
 </main>
 
-      <!-- Footer  -->
 
-      <footer class="footer">
+     <!--Footer-->
 
-        <div class="footer-content">
 
-          <div class="contacts">
-            <h3 class="title"> For questions and suggestions </h3>
-            <div class="mail">
-              <img class="icon" id="icon-email"
-                src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
-                alt="icon-email"
-                width="40"
-                height="32">
-              <h4 class="text"> <a href="mailto:email@shelter.com"> email@shelter.com </a> </h4>
-            </div>
-            <div class="phone">
-              <img class="icon" id="icon-phone"
-                src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
-                alt="icon-phone"
-                width="40"
-                height="32">
-              <h4 class="text"> <a href="tel:+136745677554"> +13 674 567 75 54 </a> </h4>
-            </div>
-          </div>
-          
-          <div class="locations">
-            <h3 class="title"> We are waiting for your visit </h3>
-            <div class="Boston">
-              <img class="icon" id="icon-marker"
-                src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
-                alt="icon-marker"
-                width="22"
-                height="32">
-              <h4 class="text"> <a href="https://goo.gl/maps/DQAtMFkDQeXLq8EK6" target="_blank"> 1 Central Street, Boston (entrance from the store) </a> </h4>
-            </div>
-            <div class="London">
-              <img class="icon" id="icon-marker"
-                src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
-                alt="icon-marker"
-                width="22"
-                height="32">
-              <h4 class="text">
-          
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.063045880919!2d-0.2001799!3d51.42026849999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608baa7401b31%3A0x18e66d9fcd2f7d77!2sSouth%20Park%20Court%2C%2018%20S%20Park%20Rd%2C%20London%20SW19%208TD%2C%20UK!5e0!3m2!1sen!2sus!4v1649263260084!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-          
-                <a href="https://goo.gl/maps/Q6fPdSKZQiEJ7BoB6" target="_blank"> 18 South Park, London  </a> </h4>
-            </div>
-          </div>
-          
-          <div class="footer-puppy">
-            <img class="footer-puppy"
-                src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
-                alt="footer-puppy"
-                width="300"
-                height="310">
-             </div>
-
-        </div>
-
-      </footer>
+<footer id="footer" class="footer">
+  <div class="container"> 
+  <div class="footer-content">
+  
+  <div class="contacts">
+    <h3 class="title"> For questions and suggestions </h3>
+    <div class="mail">
+      <img class="icon" id="icon-email"
+        src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-email.svg?raw=true"
+        alt="icon-email"
+        width="40"
+        height="32">
+      <h4 class="text"> <a href="mailto:email@shelter.com"> email@shelter.com </a> </h4>
+    </div>
+    <div class="phone">
+      <img class="icon" id="icon-phone"
+        src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-phone.svg?raw=true"
+        alt="icon-phone"
+        width="40"
+        height="32">
+      <h4 class="text"> <a href="tel:+136745677554"> +13 674 567 75 54 </a> </h4>
+    </div>
+  </div>
+  
+  <div class="locations">
+    <h3 class="title"> We are waiting for your visit </h3>
+    <div class="Boston">
+      <img class="icon" class="icon-marker"
+        src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-marker.svg?raw=true"
+        alt="icon-marker"
+        width="22"
+        height="32">
+      <h4 class="text"> <a href="https://goo.gl/maps/DQAtMFkDQeXLq8EK6" target="_blank"> 1 Central Street, Boston <br> (entrance from the store) </a> </h4>
+    </div>
+    <div class="London">
+      <img class="icon" class="icon-marker"
+        src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-marker.svg?raw=true"
+        alt="icon-marker"
+        width="22"
+        height="32">
+      <h4 class="text">
+  
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.063045880919!2d-0.2001799!3d51.42026849999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608baa7401b31%3A0x18e66d9fcd2f7d77!2sSouth%20Park%20Court%2C%2018%20S%20Park%20Rd%2C%20London%20SW19%208TD%2C%20UK!5e0!3m2!1sen!2sus!4v1649263260084!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+  
+        <a href="https://goo.gl/maps/Q6fPdSKZQiEJ7BoB6" target="_blank"> 18 South Park, London  </a> </h4>
+    </div>
+  </div>
+  
+  <div class="footer-puppy">
+    <img class="footer-puppy"
+        src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/footer-puppy.png?raw=true"
+        alt="footer-puppy"
+        width="300"
+        height="310">
+     </div>
+  
+    </div>
+  </div>
+  
+  </footer>
   
 </body>
-
-<!-- <script>
-  function injectCss(file = 'style.css') {
-    fetch(file)
-      .then((response) => response.text())
-      .then((data) => {
-        let stl = document.createElement('style');
-        stl.innerHTML = data;
-        document.head.appendChild(stl);
-      });
-  }
-  
-  function injectAll() {
-    let links = document.getElementsByTagName('link');
-    for (stl of links) {
-      injectCss(stl.href);
-    }
-  }
-  
-  window.onload = injectAll;
-  </script> -->
-
 
 </html>

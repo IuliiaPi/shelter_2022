@@ -29,10 +29,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
    margin: 0 auto;  /* vuravnivanie po centry contenta*/
 
-   background-size: 100%;
+   /* background-size: 100%; */
 }
 
 .section {
@@ -59,31 +59,30 @@ body {
 
 /*  -------------------------  Header  -------------------------------  */
 
-
 .header_wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  margin: 48px 40px 72px40px;
+  padding: 48px 40px 0px 40px;
+
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20; 
 }
 
 .header_logo-title,
 .header_logo-link {
+  margin-bottom: 10px;
   /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
 line-height: 110%;
 /* or 35px */
-/* 
-display: flex;
+/* display: flex;
 align-items: center; */
 letter-spacing: 0.06em;
-
 /* color-primary */
-
 color: #F1CDB3;
-
 text-decoration: none;
 }
 
@@ -94,13 +93,10 @@ font-weight: 400;
 font-size: 13px;
 line-height: 15px;
 /* identical to box height */
-
 /* display: flex;
 align-items: center; */
 letter-spacing: 0.1em;
-
 /* color-light-xl */
-
 color: #FFFFFF;
 }
 
@@ -110,7 +106,7 @@ color: #FFFFFF;
 }
 
 .header_nav-item {
-  margin-right: 35px;  /*otstup from right */
+  margin-right: 35px;
 }
 
 .header_nav-item:last-child {
@@ -124,10 +120,9 @@ font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* identical to box height, or 24px */
-/* color-dark-s */
-
 text-decoration: none;
   /* transition: color 0.5s; */
+  /* color-dark-s */
 color: #CDCDCD;
 }
 
@@ -149,9 +144,9 @@ color: #CDCDCD;
 #start_screen {
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20; 
 
-   min-height: 100vh;   /*  no write max-height if change (rise) content */
+   /* min-height: 100vh;    no write max-height if change (rise) content */
   /* background: url(./assets/img/header-bg.jpg) no-repeat center; */
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 
@@ -160,6 +155,7 @@ color: #CDCDCD;
   /* flex-wrap: wrap; */
   justify-content: space-around;
 
+  padding: 72px 40px 0;
   /* margin: 72px 40px 0 40px; */
 }
 
@@ -208,16 +204,18 @@ color: #CDCDCD;
 .button-make_a_friend {
   background: #F1CDB3;
 border-radius: 100px;
+
+padding: 15px 45px;
 }
 
 .button-make_a_friend:hover {
-  /* background-color: #F1CDB3, 90%; */
+  background: #FDDCC4;
   border: 2px solid transparent;
   cursor: pointer;
 }
 
 .button_nav-link {
-padding: 15px 45px;
+/* padding: 15px 45px; */
 
 /* font-family: 'Georgia'; */
 font-style: normal;
@@ -247,8 +245,8 @@ text-decoration: none;
   justify-content: space-around;
   align-items: center;
 
-  /* padding: 0 175px; */
-  margin-bottom: 100px;
+  padding: 80px 40px 100px;
+  /* margin-bottom: 100px; */
 }
 
 /* .about-pets {
@@ -346,17 +344,37 @@ align-items: center;
 }
 
 .button_arrow {
+  width: 52px;
+  height: 52px;
+
+  /* margin-right: 53px; */
+
   border: 2px solid #F1CDB3;
 box-sizing: border-box;
 border-radius: 100px;
 background-color: var(--card-background-color);
+
+text-align: center;
+/* padding: 23px 19px; */
+}
+
+.button_arrow:hover {
+  background: #FDDCC4;
+}
+
+.button_arrow_inactive {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
 }
 
 .arrow {
-  padding: 23px 19px;
-  
-  /* background: #292929; */
+  color: #292929;
+  text-decoration: none;
 }
+
+/* #arrow_left {
+  padding: 23px 19px;
+} */
 
 /* ----------------------------   card  --------------------------------- */
 
@@ -380,6 +398,12 @@ background-color: var(--card-background-color);
 
   background-color: var(--card-background-color);
   border-radius: 9px;
+
+  margin-right: 90px;
+}
+
+.card:last-child {
+margin-right: 0;
 }
 
 .card img {
@@ -429,10 +453,11 @@ color: #292929;
 
 .card:hover {
   cursor: pointer;
+  background: #c5c3c3;
   /* background-color: darken(var(--card-background-color), 15%); */
 }
 
-.btn-learn_more:hover {
+.card:hover .btn-learn_more {
   background-color: #F1CDB3;
   border: 2px solid transparent;
   cursor: pointer;
@@ -485,8 +510,8 @@ text-decoration: none;
 .help-content {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
   /* margin-bottom: 100px; */
@@ -640,7 +665,7 @@ line-height: 115%;
 display: flex;
 align-items: center;
 letter-spacing: 0.06em;
-
+text-decoration: none;
 /* color-dark-l */
 color: #545454;
 }
@@ -668,33 +693,30 @@ color: #B2B2B2;
 
 /* ----------------------  Footer styles start -------------------------- */
 
-.footer {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
-}
-
-#footer-content {
+.footer-content {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 
   /* width: 1200px;
 height: 310px; */
 
-  margin-right: 160px;
+  /* margin-right: 160px; */
 
-  /* margin: 40px 40px 40px 40px; */
+  padding: 40px 40px 0;
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 }
 
-#footer-content:last-child {
+/* #footer-content:last-child {
 margin-right: 0;
-}
+} */
 
 .contacts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-/* width: 278px; */
-/* height: 234px; */
+width: 278px;
+height: 234px;
 
   /* margin: 16px 160px 60px 0; */
 }
@@ -702,8 +724,8 @@ margin-right: 0;
 .locations {
   display: flex;
   flex-direction: column;
-  /* width: 302px; */
-/* height: 234px; */
+  width: 302px;
+height: 234px;
 }
 
 .mail,
@@ -711,11 +733,18 @@ margin-right: 0;
 .Boston,
 .London {
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.contacts h3,
-.locations h3 {
+.mail,
+.Boston {
+  margin-bottom: 40px;
+}
+
+.contacts .title,
+.locations .title {
+  margin-bottom: 40px;
   /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
@@ -728,7 +757,8 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 }
 
-h4 a {
+.contacts h4 a,
+.locations h4 a {
   /* font-family: 'Georgia'; */
 font-style: normal;
 font-weight: 400;
@@ -736,13 +766,9 @@ font-size: 20px;
 line-height: 115%;
 /* identical to box height, or 23px */
 letter-spacing: 0.06em;
-
 /* color-primary */
 color: #F1CDB3;
-
 text-decoration: none;
 }
 
-/* .icon {
-  background: #F1CDB3;
-} */
+/* ----------------------  Footer styles end -------------------------- */
