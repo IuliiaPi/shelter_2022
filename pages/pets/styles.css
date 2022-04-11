@@ -41,6 +41,7 @@ body {
 
 .header {
 position: sticky;
+top: 0px;
 }
 
 .header_wrapper {
