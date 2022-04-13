@@ -12,12 +12,13 @@ html {
 
 *, *::before, *::after {
 box-sizing: inherit;   /* nasledovanie from parents */
+/* box-sizing: border-box;  not my */
 }
 
 body {
-  /* min-height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  padding: 0; */
+  padding: 0; 
   
     /* display: flex;
     flex-direction: column;
@@ -59,6 +60,17 @@ body {
 
 /*  -------------------------  Header  -------------------------------  */
 
+.start_screen {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20; 
+
+   min-height: 100vh;  /*   no write max-height if change (rise) content */
+ /* background: url(./assets/img/header-bg.jpg) no-repeat center; */
+ background-size: cover;
+
+ max-width: 1280px;
+   margin: 0 auto;  /* vuravnivanie po centry contenta*/
+}
+
 .header_wrapper {
   display: flex;
   justify-content: space-between;
@@ -66,7 +78,7 @@ body {
 
   padding: 48px 40px 0px 40px;
 
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20; 
+  /* background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;  */
 }
 
 .header_logo-title,
@@ -142,7 +154,7 @@ color: #CDCDCD;
 /*  -----------------  Start_screen-content  --------------------- */
 
 #start_screen {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20; 
+  /* background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) warning: gradient uses a rotation that is not supported by CSS and may not behave as expected, #211F20;  */
 
    /* min-height: 100vh;    no write max-height if change (rise) content */
   /* background: url(./assets/img/header-bg.jpg) no-repeat center; */
@@ -313,7 +325,6 @@ color: #4C4C4C;
   align-items: center;
 
   padding: 80px 40px 100px;
-  /* margin-bottom: 100px; */
 }
 
 #pets-content .heading {
@@ -347,15 +358,12 @@ align-items: center;
   width: 52px;
   height: 52px;
 
-  /* margin-right: 53px; */
-
   border: 2px solid #F1CDB3;
 box-sizing: border-box;
 border-radius: 100px;
 background-color: var(--card-background-color);
 
 text-align: center;
-/* padding: 23px 19px; */
 }
 
 .button_arrow:hover {
@@ -372,9 +380,9 @@ text-align: center;
   text-decoration: none;
 }
 
-/* #arrow_left {
-  padding: 23px 19px;
-} */
+#btn_arrow_left {
+  margin-right: 53px;
+}
 
 /* ----------------------------   card  --------------------------------- */
 
@@ -403,12 +411,18 @@ text-align: center;
 }
 
 .card:last-child {
-margin-right: 0;
+margin-right: 0px;
 }
 
 .card img {
   border-radius: 9px 9px 0px 0px;
 }
+
+/* .card img:hover {
+  
+  background-image: #4C4C4C;
+} */
+
 
 .card .pets-card-title {
   font-family: 'Georgia';
