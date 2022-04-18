@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@0;1&display=swap" rel="stylesheet"> -->
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
   <title> Shelter </title>
 </head>
@@ -24,37 +24,59 @@
 
 <div class="start_screen">  
 
-<header id="header" class="header">
+ <header class="header"> <!-- id="header" -->
 <div class="container">
 
 <div class="header_wrapper">
 
 <div class="header_logo">
-<h1 class="header_logo-title"> <a href="#" class="header_logo-link"> Cozy House </a> </h1>
+<h1 class="header_logo-title"> <a href="/" class="header_logo-link"> Cozy House </a> </h1> <!--  / = ssulka na koren dokymenta vedet-->
 <p class="header_logo-subtitle"> Shelter for pets in Boston </p>
 </div>
 
   <nav class="header_nav-menu">
-    <ul class="header_nav-list">
+    <ul class="header_list">
       
-      <li class="header_nav-item">
-        <a href="#about" class="header_nav-link" id="link_active"> About the shelter </a>
+      <li class="header_item">
+        <a href="#about" class="header_link" id="link_active"> About the shelter </a>
       </li>
 
-      <li class="header_nav-item">
-        <a href="../pets/index.html" class="header_nav-link"> Our pets </a>
+      <li class="header_item">
+        <a href="../pets/index.html" class="header_link"> Our pets </a>
       </li>
 
-      <li class="header_nav-item">
-        <a href="#help" class="header_nav-link"> Help the shelter </a>
+      <li class="header_item">
+        <a href="#help" class="header_link"> Help the shelter </a>
       </li>
      
-      <li class="header_nav-item">
-      <a href="#footer" class="header_nav-link"> Contacts </a>
+      <li class="header_item">
+      <a href="#footer" class="header_link"> Contacts </a>
     </li>
 
     </ul>
+
+    <!-- <div class="header_nav-menu-close">
+      <span class="header_nav-menu-close-line"></span>
+      <span class="header_nav-menu-close-line"></span>
+    </div> -->
+
+    <div class="header_nav-menu-close">
+      <span class="header_nav-menu-close-line line_first"></span>
+      <span class="header_nav-menu-close-line line_second"></span>
+      <span class="header_nav-menu-close-line line_third"></span>
+
+      <!-- <span class="burger__line burger__line_first"></span>
+      <span class="burger__line burger__line_second"></span>
+      <span class="burger__line burger__line_third"></span> -->
+      </div>
+
   </nav>
+
+  <div class="header__burger burger">
+  <span class="burger__line burger__line_first"></span>
+  <span class="burger__line burger__line_second"></span>
+  <span class="burger__line burger__line_third"></span>
+  </div>
 
 </div>
 </div>
@@ -68,13 +90,15 @@
 
   <section class="section" id="start_screen">
 
+    <div class="container">
+    
   <div class="start_screen-content"> 
 
 <div class="content"> 
   <h2 class="heading"> Not only people need a house </h2>
   <p class="subheading"> We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see! </p>
-  <button type="button" class="button-make_a_friend">
-  <a href="#pets" class="button_nav-link"> Make a friend </a> </button>
+  <button type="button" class="btn-make_a_friend">
+  <a href="#pets" class="button_link"> Make a friend </a> </button>
 </div>
 
 <div class="start_screen-puppy"> 
@@ -87,7 +111,7 @@
 </div>
 
 </div>
-
+</div>
   </section>
 
 </div>
@@ -96,11 +120,11 @@
 
 <main class="main"> 
 
-  <div class="container">
-
   <!--About-->
 
   <section class="section" id="about"> 
+    <div class="container">
+    
     <div class="section_content" id="about-content">
 
     <div class="about-pets">
@@ -119,11 +143,14 @@
   </div>
 
 </div>
+</div>
   </section>
 
   <!--Pets-->
 
   <section class="section" id="pets"> 
+    <div class="container">
+
   <div class="section_content" id="pets-content">
 
   <h3 class="heading">  Our friends who are looking for a house </h3>
@@ -140,9 +167,9 @@
     </a>
     </button>
 
-    <div class="card">
-      <img class="pets-katrine" src="../../assets/images/pets-katrine.jpg"
-      alt="pets-katrine"
+    <div class="card" id="pets_Katrine">
+      <img class="pets-Katrine" src="../../assets/images/pets-katrine.jpg"
+      alt="pets-Katrine"
       width="270"
       height="270">
       <!-- src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"-->
@@ -151,7 +178,7 @@
       <button type="button" class="btn-learn_more"> <a href="../pets/index.html" class="text"> Learn more </a> </button>
   </div>
 
-  <div class="card">
+  <div class="card" id="pets_Jennifer">
     <img class="pets-Jennifer" src="../../assets/images/pets-jennifer.jpg"
     alt="pets-Jennifer"
     width="270"
@@ -162,7 +189,7 @@
     <button type="button" class="btn-learn_more"> <a href="../pets/index.html" class="text"> Learn more </a> </button>
   </div>
 
-<div class="card">
+<div class="card" id="pets_Woody">
   <img class="pets-Woody" src="../../assets/images/pets-woody.jpg"
   alt="pets-Woody"
   width="270"
@@ -173,7 +200,7 @@
   <button type="button" class="btn-learn_more"> <a href="../pets/index.html" class="text"> Learn more </a> </button>
   </div>
 
-<button type="button" class="button_arrow"> 
+<button type="button" class="button_arrow" id="btn_arrow_right"> 
   <a href="../pets/index.html" class="arrow" id="arrow_right"> &rarr; </a>
   <!-- <img class="arrow"
   src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/arrow-2.svg?raw=true"
@@ -187,17 +214,20 @@
 <button type="button" class="button_primary"> <a href="../pets/index.html" class="get_to_know_the_rest"> Get to know the rest </a> </button>
 
 </div>
+</div>
 </section>
 
-<!--Help-->
+<!-----------------------------------  Help ------------------------------------->
 
 <section class="section" id="help"> 
+  <div class="container">
+
 <div class="help-content">
 
 <h3 class="heading">  How you can help our shelter </h3>
 
 <div class="list">
-
+  <!-- <div class="list_row"> -->
 <div class="list_item">
   <img id="icon-pet-food"
   src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-pet-food.svg?raw=true"
@@ -243,7 +273,9 @@
       height="60">
 <h4 class="text"> Shampoos </h4>
 </div>
+<!-- </div> -->
 
+<!-- <div class="list_row"> -->
 <div class="list_item">
   <img id="icon-vitamins"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/icons/icon-vitamins.svg?raw=true"
@@ -279,16 +311,18 @@
       height="60">
 <h4 class="text"> Sleeping areas </h4>
 </div>
-
+<!-- </div> -->
 
 </div>
-
+</div>
 </div>
 </section>
 
- <!--Donation-->
+ <!----------------------------- Donation ----------------------------------->
 
 <section class="section" id="donation"> 
+  <div class="container">
+
 <div class="donation-content">
 
 <div class="donation-dog">
@@ -302,7 +336,7 @@
 <div class="content">
 <h3 class="heading">  You can also make a donation </h3>
 <h5 class="subheading"> Name of the bank / Type of bank account </h5>
-<div class="credit_card">
+<button type="button" class="credit_card">
 <div class="credit_card_content"> 
 
   <img id="credit-card"
@@ -311,21 +345,20 @@
       width="30"
       height="23">
       <h4> <a href="#"> 8380 2880 8028 8791 7435 </a> </h4>
-</div>
-</div>
+    </div>
+    </button>
+
 <p class="donation-description"> Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
 </div>
-
+</div>
 </div>
 </section>
-
-</div>
 
 </main>
 
 
 
-<!--Footer-->
+<!------------------- Footer ------------------>
 
 
 <footer id="footer" class="footer">
@@ -392,27 +425,5 @@
 </body>
 
 </html>
-
-
-<!-- <script>
-function injectCss(file = 'style.css') {
-  fetch(file)
-    .then((response) => response.text())
-    .then((data) => {
-      let stl = document.createElement('style');
-      stl.innerHTML = data;
-      document.head.appendChild(stl);
-    });
-}
-
-function injectAll() {
-  let links = document.getElementsByTagName('link');
-  for (stl of links) {
-    injectCss(stl.href);
-  }
-}
-
-window.onload = injectAll;
-</script> -->
 
 

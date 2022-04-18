@@ -1,14 +1,7 @@
-* {
-  box-sizing: border-box;   /* borders and vnytr otstyp bydyt ychituvatsia in width and height elements */
-}
-
 html {
+  box-sizing: border-box;   /*. (chto bu width = (width - padding)  + padding) borders and vnytr otstyp bydyt ychituvatsia in width and height elements */
   scroll-behavior: smooth;
 }
-
-/* html {
-  box-sizing: border-box;
-} */
 
 *, *::before, *::after {
 box-sizing: inherit;   /* nasledovanie from parents */
@@ -17,7 +10,7 @@ box-sizing: inherit;   /* nasledovanie from parents */
 body {
   /* min-height: 100vh;
   margin: 0;
-  padding: 0; */
+  padding: 0;  */
   
     /* display: flex;
     flex-direction: column;
@@ -26,15 +19,17 @@ body {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
+    font-size: 17px;
+line-height: 130%;
+color: #545454;
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
    margin: 0 auto;  /* vuravnivanie po centry contenta*/
 
    /* background-size: 100%; */
 }
-
 
 
 /*  -------------------------  Header  -------------------------------  */
@@ -42,6 +37,9 @@ body {
 .header {
 position: sticky;
 top: 0px;
+left: 0;
+width: 100%;
+background: #FFFFFF;
 }
 
 .header_wrapper {
@@ -49,7 +47,7 @@ top: 0px;
   justify-content: space-between;
   align-items: center;
 
-  padding: 30px 40px;
+  padding: 30px 0px;
 
   background: #FFFFFF;
 }
@@ -85,20 +83,20 @@ letter-spacing: 0.1em;
 color: #292929;
 }
 
-.header_nav-list {
+.header_list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.header_nav-item {
+.header_item {
   margin-right: 35px;
 }
 
-.header_nav-item:last-child {
+.header_item:last-child {
   margin-right: 0px;
 }
 
-.header_nav-link {
+.header_link {
   font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
@@ -117,19 +115,62 @@ color: #292929;
   border-bottom: 3px solid #F1CDB3;;
 }
 
-.header_nav-link:hover,
-.header_nav-link:focus,
-.header_nav-link:active {
+.header_link:hover,
+.header_link:focus,
+.header_link:active {
   opacity: .75;
   /*color: #5d7260;      /* pri navedenii */
 }
 
-/* -------------------  Pets  ----------------------- */
+
+/* -----------------------------------  Burger --------------------------------- */ 
 
 
-/* .pets {
+.header__burger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.burger__line {
+  display: block;   /* because span liner*/
+  position: absolute;
+
+  width: 100%;  /*  = 30px */
+  /* height: 2px; */
+  /* left: 0; vuravnivanie left */
+  /* background-color: #F1CDB3; */
+
+  /* width: 30px; */
+height: 0px;
+left: 0px;
+border: 2px solid #000000;
+}
+
+.burger__line_first {
+  top: 2px;
+  /* top: 0; */
+}
+
+.burger__line_second {
+  top: 12px;
+  /* top: 50%; */
+  /* transform: translateY(-50%);   strogo po centerv */
+}
+
+.burger__line_third {
+  top: 22px;
+  /* bottom: 0; */
+}
+
+
+/* --------------------------------  Pets  --------------------------- */
+
+
+.pets {
   background: #F6F6F6;
-} */
+}
 
 .pets-content {
   display: flex;
@@ -137,16 +178,18 @@ color: #292929;
   /* justify-content: center; */
   /* align-content: center; */
   align-items: center;
-
-  padding: 80px 40px 100px;
-
-  background: #F6F6F6;
+  padding-top: 80;
+  padding-bottom: 100px;
+  /* padding: 80px 40px 100px; */
+  /* background: #F6F6F6; */
 }
 
 /* Heading */
 
 .pets-content .heading {
-  margin-bottom: 45px;
+  max-width: 400px;
+  margin-top: 80px;
+  margin-bottom: 60px;
 
   font-family: 'Georgia';
 font-style: normal;
@@ -154,8 +197,8 @@ font-weight: 400;
 font-size: 35px;
 line-height: 130%;
 /* or 45px */
-display: flex;
-align-items: center;
+/* display: flex;
+align-items: center; */
 text-align: center;
 letter-spacing: 0.06em;
 /* color-dark-l */
@@ -165,12 +208,13 @@ color: #545454;
 /* --------------------  cards_container  ---------------------- */
 
 .pets-content .cards_container {
+  /* max-width: 1200px; */
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 
-margin-bottom: 45px;
+margin-bottom: 30px;
 }
 
 .card {
@@ -181,17 +225,22 @@ margin-bottom: 45px;
   /* align-content: center; */
   align-items: center;
 
-  margin-right: 30px;
+  /* margin-right: 30px; */
   margin-bottom: 30px;
 
   background: #FAFAFA;
-border-radius: 9px;
+/* border-radius: 9px; */
+/* border-radius: 9px 9px 0px 0px; */
 }
 
 .card:hover {
   cursor: pointer;
   background: #F6F6F6;
   /* background-color: darken(var(--card-background-color), 15%); */
+}
+
+.card img {
+  border-radius: 9px 9px 0px 0px;
 }
 
 .card_img {
@@ -308,39 +357,35 @@ color: #CDCDCD;
 
 /* ----------------------  Footer styles start -------------------------- */
 
+.footer {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+}
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  /* width: 1200px;
-height: 310px; */
-
-  /* margin-right: 160px; */
-
-  padding: 40px 40px 0;
-  background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
+  /* align-items: center; */
+  padding-top: 40px;
 }
-
-/* #footer-content:last-child {
-margin-right: 0;
-} */
 
 .contacts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-width: 288px;  /* width: 278px; */
-height: 234px;
-
-  /* margin: 16px 160px 60px 0; */
+max-width: 288px;  /* width: 278px; */
+/* height: 234px; */
+padding-top: 16px;
+padding-bottom: 60px;
 }
 
 .locations {
   display: flex;
   flex-direction: column;
-  width: 302px;
-height: 234px;
+  max-width: 302px;
+/* height: 234px; */
+padding-top: 16px;
+padding-bottom: 60px;
 }
 
 .mail,
@@ -352,18 +397,12 @@ height: 234px;
   align-items: center;
 }
 
-.mail,
-.Boston {
-  margin-bottom: 35px; /* 40px */
-}
-
 .icon {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .contacts .title,
 .locations .title {
-  margin-bottom: 35px;  /* 40px */
   font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
@@ -374,6 +413,15 @@ letter-spacing: 0.06em;
 
 /* color-light-xl */
 color: #FFFFFF;
+}
+
+.contacts .title,
+.mail {
+  margin-bottom: 45px; 
+}
+.locations .title,
+.Boston {
+  margin-bottom: 34px; 
 }
 
 .contacts h4 a,
@@ -391,3 +439,259 @@ text-decoration: none;
 }
 
 /* ----------------------  Footer styles end -------------------------- */
+
+/* ----------------------  Media styles start -------------------------- */
+
+
+/* 768px <= width < 1280px */
+
+
+@media screen and (max-width: 768px) {
+
+.container {
+  max-width: 708px;
+  margin: 0 auto;
+}
+
+ /* Header */
+
+.header_wrapper {
+  padding: 30px 0;
+}
+
+/* Pets */
+
+.pets-content {
+  padding-bottom: 76px;
+}
+.pets-content .heading {
+  margin-bottom: 30px;
+}
+
+.pets-content .cards_container {
+  max-width: 580px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-right: 0px;
+}
+
+#pets-Scarlett,
+#pets-Freddie {
+  display: none;
+}
+
+/* Footer */
+.footer-content{
+  padding-top: 30px;
+  justify-content: center;
+  }
+  .contacts {
+    margin-right: 60px;
+    padding-bottom: 65px;
+  }
+  .contacts,
+.locations {
+  padding-top: 0;
+}
+
+}
+
+/*--------- @media screen and (max-width: 320px) ----------*/
+
+
+@media screen and (max-width: 320px) {
+
+.container {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header .container {
+  /* max-width: 260px; */
+  /* margin: 0; */
+}
+
+.header_wrapper {
+  width: 260px;
+  /* padding: 0; */
+  /* padding-top: 42px; */
+  padding: 30px 0px 30px 0px;
+}
+
+/* Pets */
+
+.pets-content {
+  padding-bottom: 42px;
+}
+
+.pets-content .heading {
+  max-width: 300px;
+  margin-top: 42px;
+  margin-bottom: 42px;
+
+  font-size: 25px;
+}
+
+.pets-content .cards_container {
+  max-width: 300px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#pets-Sophia,
+#pets-Timmy,
+#pets-Charly,
+#pets-Scarlett,
+#pets-Freddie {
+display: none;
+}
+
+.navigation {
+  width: 300px;
+}
+
+/* Footer */
+.footer-content{
+  padding-top: 30px;
+  justify-content: center;
+  }
+  .contacts,
+  .locations {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts .title,
+  .locations .title {
+  font-size: 25px;
+}
+
+  .contacts {
+    margin-right: 0px;
+  }
+
+
+  /* ------------------------------  header__burger -----------------------------*/
+
+  .header__burger {
+    display: block;
+  }
+
+  /* .header_logo {
+    width: 184px;
+    height: 60px;
+  }
+   */
+
+   /* .header_wrapper {
+    max-width: 320px;
+    max-height: 823px;
+   } */
+
+  .header_nav-menu {
+    width: 100%;
+    /* height: 100%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* color-dark-3xl */
+background: #292929;
+    z-index: 10;
+    /* margin: 60px 10px 0; */
+    transform: translateX(100%);
+    transition: .2s all linear;
+    }
+    .header_nav-menu_active {
+      transform: translateX(0);
+    }
+  .header_nav-list {
+  /* display: flex; */
+    /* flex-direction: column;      my */
+    /* justify-content: center; */
+  }
+  /* .header_nav-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  } */
+  /* .header_nav-item:last-child {
+    margin-bottom: 0;
+  } */
+  /* .header_nav-link {
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 160%;
+color: #CDCDCD;
+  } */
+
+
+  /* ---------- header_nav-menu-close --------- */
+
+  .header_nav-menu-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    /* z-index: 11; */
+    transform: rotate(-90deg);
+  }
+
+  .header_nav-menu-close-line {
+    display: block;   /* because span liner*/
+    position: absolute;
+  
+    width: 100%;  /*  = 30px */
+    /* height: 2px; */
+    /* left: 0; vuravnivanie left */
+    /* background-color: #F1CDB3; */
+  
+    /* width: 30px; */
+  height: 0px;
+  left: 0px;
+    border: 2px solid #F1CDB3;
+  }
+  
+  .line_first {
+    top: 2px;
+    /* top: 0; */
+  }
+  
+  .line_second {
+    top: 12px;
+    /* top: 50%; */
+    /* transform: translateY(-50%);   strogo po centerv */
+  }
+  
+  .line_third {
+    top: 22px;
+    /* bottom: 0; */
+  }
+
+  /* .header_nav-menu-close-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+  } */
+  /* .header_nav-menu-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  } */
+  /* .header_nav-menu-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  } */
+
+
+}

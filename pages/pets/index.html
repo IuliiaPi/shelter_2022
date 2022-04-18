@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@0;1&display=swap" rel="stylesheet"> -->
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 
   <title> Our pets </title>
 </head>
@@ -35,26 +35,48 @@
     </div>
     
       <nav class="header_nav-menu">
-        <ul class="header_nav-list">
+        <ul class="header_list">
           
-          <li class="header_nav-item">
-            <a href="../main/index.html" class="header_nav-link" > About the shelter </a>
+          <li class="header_item">
+            <a href="../main/index.html" class="header_link" > About the shelter </a>
           </li>
     
-          <li class="header_nav-item">
-            <a href="#our_pets" class="header_nav-link" id="link_active"> Our pets </a>
+          <li class="header_item">
+            <a href="#our_pets" class="header_link" id="link_active"> Our pets </a>
           </li>
     
-          <li class="header_nav-item">
-            <a href="../main/index.html#help" class="header_nav-link"> Help the shelter </a>
+          <li class="header_item">
+            <a href="../main/index.html#help" class="header_link"> Help the shelter </a>
           </li>
          
-          <li class="header_nav-item">
-          <a href="#footer" class="header_nav-link"> Contacts </a>
+          <li class="header_item">
+          <a href="#footer" class="header_link"> Contacts </a>
         </li>
     
         </ul>
+
+        <!-- <div class="header_nav-menu-close">
+      <span class="header_nav-menu-close-line"></span>
+      <span class="header_nav-menu-close-line"></span>
+    </div> -->
+
+    <div class="header_nav-menu-close">
+      <span class="header_nav-menu-close-line line_first"></span>
+      <span class="header_nav-menu-close-line line_second"></span>
+      <span class="header_nav-menu-close-line line_third"></span>
+
+      <!-- <span class="burger__line burger__line_first"></span>
+      <span class="burger__line burger__line_second"></span>
+      <span class="burger__line burger__line_third"></span> -->
+      </div>
+
       </nav>
+
+      <div class="header__burger burger">
+        <span class="burger__line burger__line_first"></span>
+        <span class="burger__line burger__line_second"></span>
+        <span class="burger__line burger__line_third"></span>
+        </div>
     
     </div>
     </div>
@@ -78,7 +100,7 @@
 
       <div class="cards_container">
     
-        <div class="card">
+        <div class="card" id="pets-katrine">
           <img class="card_img" id="pets-katrine"
           src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-katrine.jpg?raw=true"
           alt="pets-katrine"
@@ -90,7 +112,7 @@
           <button type="button" class="learn_more"> Learn more </button>
       </div>
 
-      <div class="card">
+      <div class="card" id="pets-Jennifer">
         <img class="card_img" id="pets-Jennifer"
         src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-jennifer.jpg?raw=true"
         alt="pets-Jennifer"
@@ -102,7 +124,7 @@
         <button type="button" class="learn_more"> Learn more </button>
     </div>
     
-    <div class="card">
+    <div class="card" id="pets-Woody">
       <img class="card_img" id="pets-Woody"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-woody.jpg?raw=true"
       alt="pets-Woody"
@@ -114,7 +136,7 @@
       <button type="button" class="learn_more"> Learn more </button>
     </div>
 
-    <div class="card">
+    <div class="card" id="pets-Sophia">
       <img class="card_img" id="pets-Sophia"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-sophia.jpg?raw=true"
       alt="pets-Sophia"
@@ -126,7 +148,7 @@
       <button type="button" class="learn_more"> Learn more </button>
     </div>
 
-    <div class="card">
+    <div class="card" id="pets-Timmy">
       <img class="card_img" id="pets-Timmy"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-timmy.jpg?raw=true"
       alt="pets-Timmy"
@@ -138,7 +160,7 @@
       <button type="button" class="learn_more"> Learn more </button>
     </div>
 
-    <div class="card">
+    <div class="card" id="pets-Charly">
       <img class="card_img" id="pets-Charly"
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-charly.jpg?raw=true"
       alt="pets-Charly"
@@ -150,20 +172,8 @@
       <button type="button" class="learn_more"> Learn more </button>
     </div>
 
-    <div class="card">
-      <img class="card_img" id="pets-Freddie"
-      src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-freddie.jpg?raw=true"
-      alt="pets-Freddie"
-      width="270"
-      height="270">
-    
-      <h4 class="pets-card-title" id="Freddie"> Freddie </h4>
-    
-      <button type="button" class="learn_more"> Learn more </button>
-    </div>
-
-    <div class="card">
-      <img class="card_img" id="pets-Scarlett"
+    <div class="card" id="pets-Scarlett">
+      <img class="card_img" 
       src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-scarlett.jpg?raw=true"
       alt="pets-Scarlett"
       width="270"
@@ -174,11 +184,23 @@
       <button type="button" class="learn_more"> Learn more </button>
     </div>
 
+    <div class="card" id="pets-Freddie">
+      <img class="card_img" 
+      src="https://github.com/IuliiaPi/shelter/blob/master/assets/images/pets-freddie.jpg?raw=true"
+      alt="pets-Freddie"
+      width="270"
+      height="270">
+    
+      <h4 class="pets-card-title" id="Freddie"> Freddie </h4>
+    
+      <button type="button" class="learn_more"> Learn more </button>
+    </div>
+
 
     
       </div>
     
-      <!-- navigation -->
+      <!--------------------- navigation ------------------->
 
       <nav class="navigation"> 
 
@@ -209,7 +231,7 @@
 </main>
 
 
-     <!--Footer-->
+     <!------------------------------------  Footer ---------------------------------------->
 
 
 <footer id="footer" class="footer">
